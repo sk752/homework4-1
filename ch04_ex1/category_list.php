@@ -43,11 +43,18 @@ $statement->closeCursor();
 	<?php endforeach; ?>
 
     </table>
+    <h2> Add Category </h2>
 
-    <h2>Add Category</h2>
-    
-    <!-- add code for the form here -->
-    
+	<h2 class = "margin_top_increase"> Add Category <?h2>
+	<form action = "add_category.php" method = "post"
+		id = "add_category_form">
+
+		<label> NAME </label>
+		<input type = "text" name = "name" />
+		<input id = "add_category_button" type = "submit" value = "add
+		/>
+	</form>
+
     <br>
     <p><a href="index.php">List Products</a></p>
 
